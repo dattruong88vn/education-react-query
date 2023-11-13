@@ -64,3 +64,10 @@
         - Define 2 function onCallback và onError
         - Thêm vào option config của useQuery 2 field: onSuccess và onError bằng chính 2 fn vừa define
         - Params tương ứng của 2 fn này chính là data (success) và error (failed)
+
+    6. Transformation data
+        - Cấu trúc data từ api trả về có thể khác với yêu cầu ở FE
+        - useQuery cung cấp 1 option để có thể xử lý cấu trúc data ngay khi nhận được từ API
+        - Sử dụng key select trong option config:
+            + Là 1 function, có tham số là data từ API
+            + Return về data mà bạn muốn transform theo yêu cầu ở FE

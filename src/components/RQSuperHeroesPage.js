@@ -7,25 +7,13 @@ const fetchSuperHeroes = () => {
 };
 
 export const RQSuperHeroesPage = () => {
-  const [refetchInterval, setRefetchInterval] = useState(3000);
-
-  const onSuccess = (data) => {
-    if (data.data.length === 4) {
-      setRefetchInterval(false);
-    }
-  };
-
-  const onError = (error) => {
-    setRefetchInterval(false);
-  };
-
   const { isLoading, data, isError, error, refetch } = useQuery(
     "super-hero",
     fetchSuperHeroes,
     {
-      refetchInterval,
-      onSuccess,
-      onError,
+      select: (data) => {
+        return data.data.map((hero) => hero.name);
+      },
     }
   );
 
@@ -42,8 +30,8 @@ export const RQSuperHeroesPage = () => {
       <h2>RQSuperHeroesPage</h2>
       <button onClick={refetch}>Fetch</button>
       <div>
-        {data?.data.map((item) => {
-          return <div key={item.id}>{item.name}</div>;
+        {data.map((item) => {
+          return <div key={item}>{item}</div>;
         })}
       </div>
     </div>
