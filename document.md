@@ -54,3 +54,9 @@
         - refetchIntervalInBackground:
             + Sử dụng kết hợp với refetchInterval, call api ngầm sau mỗi n giây.
 
+
+    4. Fetch API by event
+        - Thực hiện:
+            + Thêm enabled: false vào option config trong useQuery
+            + Destructure function refresh từ useQuery
+            + Handle event bằng function này.
