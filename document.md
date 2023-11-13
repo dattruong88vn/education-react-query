@@ -37,3 +37,20 @@
             + Các lần tiếp theo đã hết thời gian stale nhưng chưa hết thời gian cache
                 isLoading: false -> false
                 isFetching: true -> false (call lại api ở background)
+
+    3. Refetch
+        - refetchOnMount:
+            + Call api khi mount component
+            + Value: true | false | 'always'
+
+        - refetchOnWindowFocus:
+            + Call api khi user focus vào cửa sổ có hiển thị component
+            + Value: true | false | 'always'
+
+        - refetchInterval:
+            + Call Api sau mỗi n giây
+            + Value: true | false | number
+
+        - refetchIntervalInBackground:
+            + Sử dụng kết hợp với refetchInterval, call api ngầm sau mỗi n giây.
+
