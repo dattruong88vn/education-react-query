@@ -56,7 +56,11 @@
 
 
     4. Fetch API by event
-        - Thực hiện:
-            + Thêm enabled: false vào option config trong useQuery
-            + Destructure function refresh từ useQuery
-            + Handle event bằng function này.
+        - Thêm enabled: false vào option config trong useQuery
+        - Destructure function refresh từ useQuery
+        - Handle event bằng function này.
+
+    5. Callback sucess và callback error
+        - Define 2 function onCallback và onError
+        - Thêm vào option config của useQuery 2 field: onSuccess và onError bằng chính 2 fn vừa define
+        - Params tương ứng của 2 fn này chính là data (success) và error (failed)
