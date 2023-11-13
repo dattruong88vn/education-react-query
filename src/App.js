@@ -6,6 +6,7 @@ import "./App.css";
 import { HomePage } from "./components/HomePage";
 import { RQSuperHeroesPage } from "./components/RQSuperHeroesPage";
 import { SuperHeroesPage } from "./components/SuperHeroesPage";
+import { HWSuperHeroesPage } from "./components/HWSuperHeroesPage";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,9 @@ function App() {
               <li>
                 <Link to="/rq-super-heroes">RQ Super Heroes</Link>
               </li>
+              <li>
+                <Link to="/hw-super-heroes">HW Super Heroes</Link>
+              </li>
             </ul>
           </nav>
           <Switch>
@@ -33,6 +37,9 @@ function App() {
             </Route>
             <Route path="/rq-super-heroes">
               <RQSuperHeroesPage />
+            </Route>
+            <Route path="/hw-super-heroes">
+              <HWSuperHeroesPage />
             </Route>
             <Route path="/">
               <HomePage />
