@@ -8,7 +8,8 @@ const fetchSuperHeroes = () => {
 export const RQSuperHeroesPage = () => {
   const { isLoading, data, isError, error } = useQuery(
     "super-hero",
-    fetchSuperHeroes
+    fetchSuperHeroes,
+    { refetchOnMount: true, refetchOnWindowFocus: true }
   );
 
   if (isLoading) {
