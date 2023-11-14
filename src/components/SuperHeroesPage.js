@@ -8,7 +8,7 @@ export const SuperHeroesPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/superheroes1")
+      .get("http://localhost:4000/superheroes")
       .then((res) => {
         setData(res.data);
         setIsLoading(false);
@@ -31,9 +31,14 @@ export const SuperHeroesPage = () => {
   return (
     <>
       <h2>Super Heroes Page</h2>
-      {data.map((hero) => {
+      {/* {data.map((hero) => {
         return <div>{hero.name}</div>;
-      })}
+      })} */}
+      <div>
+        {data?.map((item) => {
+          return <div key={item.id}>{item.name}</div>;
+        })}
+      </div>
     </>
   );
 };

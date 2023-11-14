@@ -27,8 +27,8 @@ export const HWSuperHeroesPage = () => {
       <h2>HWSuperHeroesPage</h2>
       <button onClick={refetch}>Fetch</button>
       <div>
-        {data?.map((item) => {
-          return <div key={item}>{item}</div>;
+        {data?.data.map((item) => {
+          return <div key={item.id}>{item.name}</div>;
         })}
       </div>
     </div>

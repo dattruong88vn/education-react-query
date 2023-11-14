@@ -71,3 +71,16 @@
         - Sử dụng key select trong option config:
             + Là 1 function, có tham số là data từ API
             + Return về data mà bạn muốn transform theo yêu cầu ở FE
+
+    7. Tham số của useQuery hook:
+        7.1. Tham số thứ nhất: unique key
+            - Giá trị có thể là
+                + string: "super-hero"
+                + array: ["super-hero", heroId]
+
+        7.2. Tham số thứ hai: callback function
+            - Viết dưới dạng arrow funciton để truyền tham số vào
+                () => fetchApi(heroId)
+
+            - Viết dưới dạng thu gọn và nhận vào 1 tham số là 1 object
+                + Object này có 1 key là queryKey, value chính là array các unique key được truyền vào useQuery qua tham số thứ nhất
