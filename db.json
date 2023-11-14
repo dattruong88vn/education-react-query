@@ -14,27 +14,98 @@
       "id": 3,
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "The Flash",
+      "alterEgo": "Barry Allen",
+      "id": 4
+    },
+    {
+      "name": "Dat",
+      "alterEgo": "Li",
+      "id": 5
+    },
+    {
+      "name": "abc",
+      "alterEgo": "ácdc",
+      "id": 6
+    },
+    {
+      "name": "ádfa",
+      "alterEgo": "àdafsdfas",
+      "id": 7
     }
   ],
   "friends": [
-    { "id": 1, "name": "Thanh Dat" },
-    { "id": 2, "name": "Dat 09" },
-    { "id": 3, "name": "Dat Truong" }
+    {
+      "id": 1,
+      "name": "Thanh Dat"
+    },
+    {
+      "id": 2,
+      "name": "Dat 09"
+    },
+    {
+      "id": 3,
+      "name": "Dat Truong"
+    }
   ],
-  "users": [{ "id": "dattruong88vn@gmail.com", "channelId": "datruong" }],
+  "users": [
+    {
+      "id": "dattruong88vn@gmail.com",
+      "channelId": "datruong"
+    }
+  ],
   "channels": [
-    { "id": "datruong", "courses": ["javascript", "ReactJS", "nextJS"] }
+    {
+      "id": "datruong",
+      "courses": [
+        "javascript",
+        "ReactJS",
+        "nextJS"
+      ]
+    }
   ],
   "colors": [
-    { "id": 1, "label": "red" },
-    { "id": 2, "label": "blue" },
-    { "id": 3, "label": "green" },
-    { "id": 4, "label": "yellow" },
-    { "id": 5, "label": "purple" },
-    { "id": 6, "label": "pink" },
-    { "id": 7, "label": "black" },
-    { "id": 8, "label": "white" },
-    { "id": 9, "label": "orange" },
-    { "id": 10, "label": "grey" }
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "green"
+    },
+    {
+      "id": 4,
+      "label": "yellow"
+    },
+    {
+      "id": 5,
+      "label": "purple"
+    },
+    {
+      "id": 6,
+      "label": "pink"
+    },
+    {
+      "id": 7,
+      "label": "black"
+    },
+    {
+      "id": 8,
+      "label": "white"
+    },
+    {
+      "id": 9,
+      "label": "orange"
+    },
+    {
+      "id": 10,
+      "label": "grey"
+    }
   ]
 }

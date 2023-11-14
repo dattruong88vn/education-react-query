@@ -28,13 +28,13 @@ function App() {
               </li>
               {/* <li>
                 <Link to="/super-heroes">Traditional Super Heroes</Link>
-              </li>
+              </li>*/}
               <li>
                 <Link to="/rq-super-heroes">RQ Super Heroes</Link>
-              </li> 
-              <li>
+              </li>
+              {/*<li>
                 <Link to="/hw-super-heroes">HW Super Heroes</Link>
-              </li> 
+              </li>
               <li>
                 <Link to="/rq-parallel-queries">Parallel Queries</Link>
               </li>
@@ -42,7 +42,8 @@ function App() {
                 <Link to="/rq-dynamic-parallel-queries">
                   Dynamic Parallel Queries
                 </Link>
-              </li> */}
+              </li>{" "}
+              */}
               <li>
                 <Link to="/dependent-query">Dependent Query</Link>
               </li>
