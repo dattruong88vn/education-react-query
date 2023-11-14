@@ -18,7 +18,7 @@ export const RQSuperHeroesPage = () => {
     // console.log("Error");
   };
 
-  const { isLoading, data, isError, error, refetch } = useSuperHeroesData(
+  const { isLoading, data, isError, error } = useSuperHeroesData(
     onSuccess,
     onError
   );
@@ -28,7 +28,6 @@ export const RQSuperHeroesPage = () => {
   useEffect(() => {
     setName("");
     setAlterEgo("");
-    refetch();
   }, [isSuccess]);
 
   const handleSubmit = () => {
