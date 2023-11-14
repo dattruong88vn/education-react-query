@@ -91,6 +91,10 @@
                 - Viết dưới dạng thu gọn và nhận vào 1 tham số là 1 object
                     + Object này có 1 key là queryKey, value chính là array các unique key được truyền vào useQuery qua tham số thứ nhất
 
+        8. Keep previous data:
+            - Thêm vào option config field: keepPreviousData = true
+            - Sử dụng cho trường hợp call data kiểu phân trang --> thay vì show loading sẽ show data của page trước đó
+
     useQueries
         1. Tác dụng
             - Multiple dynamic query

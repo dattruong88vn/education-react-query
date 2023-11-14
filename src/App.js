@@ -12,6 +12,7 @@ import { ParallelQueries } from "./components/ParallelQueries";
 import { DynamicParallelQuery } from "./components/DynamicParallelQuery";
 import DependentQueryPage from "./components/DependentQuery";
 import { PaginationQuery } from "./components/PaginationQuery";
+import { InfiniteQuery } from "./components/InfiniteQuery";
 
 const queryClient = new QueryClient();
 
@@ -25,16 +26,16 @@ function App() {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/super-heroes">Traditional Super Heroes</Link>
               </li>
               <li>
                 <Link to="/rq-super-heroes">RQ Super Heroes</Link>
-              </li>
-              {/* <li>
+              </li> 
+              <li>
                 <Link to="/hw-super-heroes">HW Super Heroes</Link>
-              </li> */}
-              {/* <li>
+              </li> 
+              <li>
                 <Link to="/rq-parallel-queries">Parallel Queries</Link>
               </li>
               <li>
@@ -47,6 +48,9 @@ function App() {
               </li>
               <li>
                 <Link to="/pagination-query">Pagination Query</Link>
+              </li>
+              <li>
+                <Link to="/infinite-query">Infinite Query</Link>
               </li>
             </ul>
           </nav>
@@ -74,6 +78,9 @@ function App() {
             </Route>
             <Route path="/pagination-query">
               <PaginationQuery />
+            </Route>
+            <Route path="/infinite-query">
+              <InfiniteQuery />
             </Route>
             <Route path="/">
               <HomePage />
