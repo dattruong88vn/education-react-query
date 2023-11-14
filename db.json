@@ -20,5 +20,9 @@
     { "id": 1, "name": "Thanh Dat" },
     { "id": 2, "name": "Dat 09" },
     { "id": 3, "name": "Dat Truong" }
+  ],
+  "users": [{ "id": "dattruong88vn@gmail.com", "channelId": "datruong" }],
+  "channels": [
+    { "id": "datruong", "courses": ["javascript", "ReactJS", "nextJS"] }
   ]
 }
