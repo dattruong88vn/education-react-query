@@ -9,6 +9,7 @@ import { SuperHeroesPage } from "./components/SuperHeroesPage";
 import { HWSuperHeroesPage } from "./components/HWSuperHeroesPage";
 import { RQSuperHeroPage } from "./components/RQSuperHeroPage";
 import { ParallelQueries } from "./components/ParallelQueries";
+import { DynamicParallelQuery } from "./components/DynamicParallelQuery";
 
 const queryClient = new QueryClient();
 
@@ -32,7 +33,12 @@ function App() {
                 <Link to="/hw-super-heroes">HW Super Heroes</Link>
               </li> */}
               <li>
-                <Link to="/hw-parallel-queries">Parallel Queries</Link>
+                <Link to="/rq-parallel-queries">Parallel Queries</Link>
+              </li>
+              <li>
+                <Link to="/rq-dynamic-parallel-queries">
+                  Dynamic Parallel Queries
+                </Link>
               </li>
             </ul>
           </nav>
@@ -49,8 +55,11 @@ function App() {
             <Route path="/hw-super-heroes">
               <HWSuperHeroesPage />
             </Route>
-            <Route path="/hw-parallel-queries">
+            <Route path="/rq-parallel-queries">
               <ParallelQueries />
+            </Route>
+            <Route path="/rq-dynamic-parallel-queries">
+              <DynamicParallelQuery heroIds={[1, 3]} />
             </Route>
             <Route path="/">
               <HomePage />
