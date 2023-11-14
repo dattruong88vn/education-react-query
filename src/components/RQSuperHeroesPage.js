@@ -3,10 +3,10 @@ import { useSuperHeroesData } from "../hooks/useSuperHeroesData";
 
 export const RQSuperHeroesPage = () => {
   const onSuccess = () => {
-    console.log("Success");
+    // console.log("Success");
   };
   const onError = () => {
-    console.log("Error");
+    // console.log("Error");
   };
 
   const { isLoading, data, isError, error, refetch } = useSuperHeroesData(

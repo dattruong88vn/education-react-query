@@ -21,7 +21,7 @@ const DependentQueryPage = ({ email }) => {
       enabled: !!channelId,
     }
   );
-  console.log(courses);
+  // console.log(courses);
   return <div>DependentQuery</div>;
 };
 

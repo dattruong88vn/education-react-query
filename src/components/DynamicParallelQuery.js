@@ -15,6 +15,6 @@ export const DynamicParallelQuery = ({ heroIds }) => {
       };
     })
   );
-  console.log({ queryResult });
+  // console.log({ queryResult });
   return <div>DynamicParallelQuery</div>;
 };

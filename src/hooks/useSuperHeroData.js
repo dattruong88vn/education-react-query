@@ -1,4 +1,4 @@
-import { useQuery } from "react-query";
+import { useQuery, useQueryClient } from "react-query";
 import axios from "axios";
 
 // #1
@@ -12,9 +12,25 @@ const fetchSuperHero2 = ({ queryKey }) => {
 };
 
 export const useSuperHeroData = (heroId) => {
+  const queryClient = useQueryClient();
+
   // #1: use arrow function to pass agrument
   // return useQuery(["super-hero", heroId], () => fetchSuperHero(heroId));
 
   // #2: use function and destructure params
-  return useQuery(["super-hero", heroId], fetchSuperHero2);
+  return useQuery(["super-hero", heroId], fetchSuperHero2, {
+    initialData: () => {
+      const hero = queryClient
+        .getQueryData("super-heroes")
+        ?.data?.find((hero) => hero.id === Number(heroId));
+
+      if (hero) {
+        return {
+          data: hero,
+        };
+      } else {
+        return undefined;
+      }
+    },
+  });
 };
