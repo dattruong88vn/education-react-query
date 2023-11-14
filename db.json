@@ -24,5 +24,17 @@
   "users": [{ "id": "dattruong88vn@gmail.com", "channelId": "datruong" }],
   "channels": [
     { "id": "datruong", "courses": ["javascript", "ReactJS", "nextJS"] }
+  ],
+  "colors": [
+    { "id": 1, "label": "red" },
+    { "id": 2, "label": "blue" },
+    { "id": 3, "label": "green" },
+    { "id": 4, "label": "yellow" },
+    { "id": 5, "label": "purple" },
+    { "id": 6, "label": "pink" },
+    { "id": 7, "label": "black" },
+    { "id": 8, "label": "white" },
+    { "id": 9, "label": "orange" },
+    { "id": 10, "label": "grey" }
   ]
 }
